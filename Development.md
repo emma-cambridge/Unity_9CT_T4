@@ -16,7 +16,24 @@
 - Scoring and Feedback: The scoring system will be based on how many collectibles are gathered. The player will be able to retry the game to get a higher score
 - Level progression: The levels will get gradually harder and be triggered by the completion of the maze
 - Saving and Loading Data: The player's highest score will be saved locally on their computer
-#### Non-Functional Requirements'
+#### Non-Functional Requirements
 - Performance: The game should load in 4 seconds and respond to the user's inputs instantly
 - Usability: The UI will be simple and intuitive with a splash screen upon entering the game and a good view of the puzzles, and will contain written instructions directing the user to which keys to press.
-- Compatiility: 
+- Compatibility: The game must be able to run on a PC
+- Scalability: The game only needs to handle one user but will be able to contain additional levels
+- Security: Any user data will be stored securely to ensure privacy
+- Reliability/Availability: The game should work the majority of the time and have a splashscreen to inform the user if the network is interupted
+#### Consideration of Social and Ethical Issues
+Equity encompasses treating all people fairly and giving them the means to succeed in a setting despite any personal disadvantages, while accessibility refers to being easily interacted with by as many people as possible. 
+- Accessibility: The simulation won't contain audio or alternative controls, but will allow you to adjust brightness and colour.
+- Privacy and Data Protection: The program will confirm whether the user would like to store their score in the system
+- Representation: My game doesn't contain animate objects
+- Mental and Emotional Wellbeing: The game contains extremely light subject matter and won't distress the user
+- Cultural Sensitivities: The ball-maze simulation shouldn't be offensive to different cultures and as such won't contain any warnings
+## Researching and Planning
+### PMI Table
+https://docs.google.com/document/d/1_rtc8e7JQfKAgdHl4bF2o9PjgolWCQrppN82jTAPsCM/edit?tab=t.0
+
+### Gantt Chart
+https://docs.google.com/spreadsheets/d/1SEqt2lTBzAk8RtQYbgnO-QajrjbYgjJquTb-65iJIqs/edit?gid=0#gid=0
+
