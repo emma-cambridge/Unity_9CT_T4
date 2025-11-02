@@ -31,8 +31,12 @@ Equity encompasses treating all people fairly and giving them the means to succe
 - Mental and Emotional Wellbeing: The game contains extremely light subject matter and won't distress the user
 - Cultural Sensitivities: The ball-maze simulation shouldn't be offensive to different cultures and as such won't contain any warnings
 ## Researching and Planning
+
 ### PMI Table
 https://docs.google.com/document/d/1_rtc8e7JQfKAgdHl4bF2o9PjgolWCQrppN82jTAPsCM/edit?tab=t.0
+
+### Storyboards
+(attach at home)
 
 ### Gantt Chart
 https://docs.google.com/spreadsheets/d/1SEqt2lTBzAk8RtQYbgnO-QajrjbYgjJquTb-65iJIqs/edit?gid=0#gid=0
