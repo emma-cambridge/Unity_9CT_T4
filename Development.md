@@ -35,9 +35,23 @@ Equity encompasses treating all people fairly and giving them the means to succe
 ### PMI Table
 https://docs.google.com/document/d/1_rtc8e7JQfKAgdHl4bF2o9PjgolWCQrppN82jTAPsCM/edit?tab=t.0
 
+![PMI Table](PMI_table.png "PMI Table")
+
 ### Storyboards
 (attach at home)
 
 ### Gantt Chart
-https://docs.google.com/spreadsheets/d/1SEqt2lTBzAk8RtQYbgnO-QajrjbYgjJquTb-65iJIqs/edit?gid=0#gid=0
+https://docs.google.com/spreadsheets/d/1S47p2WC2Dfi1txKhbKnhTM3qi1RH-Ic0zdOsRRNm2P0/edit?gid=0#gid=0
 
+![Gantt Chart](Gantt_chart.png "Gantt Chart")
+
+### Flowcharts and Pseudocode
+#### Inputs
+![Inputs Flowchart](Inputs_flowchart.png "Inputs Flowchart")
+![Inputs Pseudocode](Inputs_Psuedocode.png "Inputs Pseudocode")
+#### Processing
+![Processing Flowchart](Processing_flowchart.png "Processing Flowchart")
+![Processing Pseudocode](Processing_pseudocode.png "Processing Pseudocode")
+#### User Interaction
+![User Interaction Pseudocode](user_interaction_Psuedocode.png "User Interaction Pseudocode")
+#### Simulation
