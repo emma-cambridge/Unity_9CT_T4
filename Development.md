@@ -48,10 +48,62 @@ https://docs.google.com/spreadsheets/d/1S47p2WC2Dfi1txKhbKnhTM3qi1RH-Ic0zdOsRRNm
 ### Flowcharts and Pseudocode
 #### Inputs
 ![Inputs Flowchart](Inputs_flowchart.png "Inputs Flowchart")
-![Inputs Pseudocode](Inputs_Psuedocode.png "Inputs Pseudocode")
+~~~
+BEGIN inputs
+    Input user_input
+    IF 'A' is pressed THEN
+        Move ball right
+    ELSE IF 'D' is pressed THEN
+        Move ball left
+    ELSE IF 'W' is pressed THEN
+        Move ball up
+    ELSE IF 'S' is pressed THEN
+        Move ball down
+    ENDIF
+END inputs
+~~~
 #### Processing
 ![Processing Flowchart](Processing_flowchart.png "Processing Flowchart")
-![Processing Pseudocode](Processing_pseudocode.png "Processing Pseudocode")
+~~~
+BEGIN processing
+    INPUT no_of_items_collected
+    IF score > previous_score THEN
+        highest_score = score
+        INPUT "do you want to save your score?"
+        IF user_input == "yes" THEN
+            Save highest score on PC
+        ELSE IF user_input == "no" THEN
+            pass
+        ENDIF
+END processing
+~~~
 #### User Interaction
-![User Interaction Pseudocode](user_interaction_Psuedocode.png "User Interaction Pseudocode")
+![User Interaction Flowchart](User_interaction_flowchart.png "User interaction flowchart")
+~~~ 
+BEGIN user_interaction
+    show splash screen
+    INPUT user_input
+    IF "start" is pressed THEN
+        Begin game
+    ELSE IF 'score board' is pressed THEN
+        Show score_board
+    ENDIF
+END user_interaction
+~~~
 #### Simulation
+![Simulation Flowchart](simulation_flowchart.png "Simulation Flowchart")
+~~~
+BEGIN simulation
+    show level
+    INPUT user_input
+    IF ball collides with wall THEN
+        ball bounces off of wall
+    ENDIF
+    IF collectible is collected THEN
+        update score
+    ENDIF
+    IF level is completed THEN
+        begin next level
+    ENDIF
+END simulation
+~~~
