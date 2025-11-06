@@ -31,30 +31,27 @@ Equity encompasses treating all people fairly and giving them the means to succe
 - Mental and Emotional Wellbeing: The game contains extremely light subject matter and won't distress the user
 - Cultural Sensitivities: The ball-maze simulation shouldn't be offensive to different cultures and as such won't contain any warnings
 ## Researching and Planning
-
 ### PMI Table
+![PMI Table](PMI_table.png "PMI Table")
 https://docs.google.com/document/d/1_rtc8e7JQfKAgdHl4bF2o9PjgolWCQrppN82jTAPsCM/edit?tab=t.0
 
-![PMI Table](PMI_table.png "PMI Table")
-
-### Storyboards
-(attach at home)
-
 ### Gantt Chart
-https://docs.google.com/spreadsheets/d/1S47p2WC2Dfi1txKhbKnhTM3qi1RH-Ic0zdOsRRNm2P0/edit?gid=0#gid=0
-
 ![Gantt Chart](Gantt_chart.png "Gantt Chart")
 
-### Flowcharts and Pseudocode
-#### Inputs
-![Inputs Flowchart](Inputs_flowchart.png "Inputs Flowchart")
+### Story Boards
+![Splash Screen Story Board](20251106_202630.jpg "Splash Screen")
+![Level Example Story Board](20251106_202639.jpg "Level Example")
+![Whole Game Flowchart](Whole_game_flowchart.png "Whole Game Flowchart")
+
+### Flowcharts
+#### User Interaction
 ~~~
 BEGIN inputs
-    Input user_input
+    INPUT user_input
     IF 'A' is pressed THEN
-        Move ball right
-    ELSE IF 'D' is pressed THEN
         Move ball left
+    ELSE IF 'D' is pressed THEN
+        Move ball right
     ELSE IF 'W' is pressed THEN
         Move ball up
     ELSE IF 'S' is pressed THEN
@@ -62,42 +59,14 @@ BEGIN inputs
     ENDIF
 END inputs
 ~~~
-#### Processing
-![Processing Flowchart](Processing_flowchart.png "Processing Flowchart")
-~~~
-BEGIN processing
-    INPUT no_of_items_collected
-    IF score > previous_score THEN
-        highest_score = score
-        INPUT "do you want to save your score?"
-        IF user_input == "yes" THEN
-            Save highest score on PC
-        ELSE IF user_input == "no" THEN
-            pass
-        ENDIF
-END processing
-~~~
-#### User Interaction
-![User Interaction Flowchart](User_interaction_flowchart.png "User interaction flowchart")
-~~~ 
-BEGIN user_interaction
-    show splash screen
-    INPUT user_input
-    IF "start" is pressed THEN
-        Begin game
-    ELSE IF 'score board' is pressed THEN
-        Show score_board
-    ENDIF
-END user_interaction
-~~~
-#### Simulation
-![Simulation Flowchart](simulation_flowchart.png "Simulation Flowchart")
+![Inputs Flowchart](Inputs_flowchart.png "inputs")
+#### Simulation Mechanics
 ~~~
 BEGIN simulation
     show level
     INPUT user_input
     IF ball collides with wall THEN
-        ball bounces off of wall
+        ball bounces off wall
     ENDIF
     IF collectible is collected THEN
         update score
@@ -107,3 +76,33 @@ BEGIN simulation
     ENDIF
 END simulation
 ~~~
+![Simulation Flowchart](simulation_flowchart.png "simulation")
+#### Scoring and Feedback
+~~~
+BEGIN scoring
+    INPUT no_of_items_collected
+    IF score > previous_score THEN
+        highest_score = score
+        OUTPUT "Do you want to save your score?"
+        IF user_input == "yes" THEN
+            save highest_score on PC
+        ENDIF
+    ENDIF
+END scoring
+~~~
+![Scoring and Feedback Flowchart](Scoring_flowchart.png "scoring")
+#### Saving and Loading Data
+~~~
+BEGIN processing
+    OUTPUT highest_score from PC
+    OUTPUT level options
+    INPUT user_input
+    IF "continue" is clicked THEN
+        Load save data from PC
+    ENDIF
+    IF "save progress" is clicked THEN
+        Save level number locally
+    ENDIF
+END processing
+~~~
+![Saving and Loading Data Flowchart](Processing_flwochart.png "processing")
